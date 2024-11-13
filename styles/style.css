@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header h1{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+header nav ul, main section#presentation ul{
+    padding: 0;
+    margin: 0;
+}
+header nav ul li, main section#presentation ul li{
+    margin: 10px;
+    display: inline-block;
+}
+header nav ul li a,  main section#presentation ul li a{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    transition: ease-in 0.3s;
+    padding: 10px;
+    border-radius: 10px;
+}
+header nav ul li a:hover, header nav ul li a:active, header nav ul li a:focus, main section#presentation ul li a:hover, main section#presentation ul li a:focus,  main section#presentation ul li a:active{
+    color: white;
+    background-color: #e68817;
+}
+
+main section#bienvenue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    margin: 0;
+    background-image: url("/images/cs2-main.jpeg");
+    background-size: cover;
+    background-position-y: center;
+}
+main section#bienvenue h1, main section#presentation h1, main section#presentation-equipe h1, main section#photos ul li h1, main section#series h1{
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+}
+main section#presentation, main section#presentation-equipe, main section#annonce, main section#photos, main section#series{
+    margin: 100px auto;
+    width: 60vw;
+    text-align: center;
+}
+main section#presentation h1, main section#presentation-equipe h1, main section#photos ul li h1, main section#series h1{
+    color: black;
+}
+main section#presentation p, main section#presentation-equipe p, main section#annonce p, main section#photos ul li p, main section#series p{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: justify;
+}
+main section#photos ul li div{
+    margin: 20px;
+    display: flex;
+}
+main section#photos ul li div p{
+    margin: 10px;
+}
+main section#photos ul li div img{
+    width: 30%;
+}
+main section#photos ul li{
+    display: inline-block;
+}
+main section#presentation img{
+    width: 100%;
+}
+main section#presentation ul{
+    margin-top: 10px;
+}
+main section#presentation-equipe div{
+    display: flex;
+    justify-content: space-evenly;
+}
+main section#presentation-equipe div img{
+    width: 200px;
+}
+footer{
+    display: flex;
+    height: 81px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 -5px 5px #C3C3C3;
+}
+footer p{
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+}
